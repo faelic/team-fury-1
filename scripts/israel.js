@@ -1,11 +1,11 @@
-var text="hello world,this is ";
-var fullname="oluwafemi adeoye adeyemi ";
-var text1="with "
-var id="HNG-04195 ";
-var text2="and email "
-var email="adeoyefemi3@gmail.com ";
-var text3="using ";
-var language="javascript ";
-var stage="for stage 2 task";
-
-console.log(text+fullname+text1+id+text2+email+text3+language+stage);
+const sendMessage = () => {
+    const me = {
+   name: 'oluwafemi adeoye',
+   id: 'HNG-04195',
+   email: 'adeoyefemi3@gmail.com',
+   language: 'JavaScript'
+   }
+     const { name, id, email, language } = me;
+     return `Hello World, this is ${name} with HNGi7 ID ${id} and email ${email} using ${language} for stage 2 task`
+}
+console.log(sendMessage())
